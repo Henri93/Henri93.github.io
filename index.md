@@ -4,7 +4,7 @@ layout: default
 
 # Connecting to The Raspberry PI(mac)
 
-On your pc press `command` + `space` and type _terminal_.
+On your pc press `command` + `space` and type _'terminal'_.
 
 In the terminal enter the following:
 
@@ -12,9 +12,11 @@ In the terminal enter the following:
 ssh pi@10.103.214.182
 ```
 
-Then type _raspberry_ as the password and hit `enter`.
+Then type _'raspberry'_ as the password and hit `enter`.
 
 > You should now be connect to the PI via ssh.
+
+
 
 # Running the pumps
 
@@ -28,15 +30,15 @@ cd aqueduct/aqueduct
 
 hit `enter` after
 
-Verify you are in the correct folder using
+Verify you are in the correct folder using:
 
 ```bash
 ls
 ```
 
-hit `enter` after:
+and hitting `enter` after.
 
-And you should see Hub.py
+You should see Hub.py.
 
 Now to run the file type:
 
@@ -46,7 +48,7 @@ python3
 
 hit `enter` after
 
-This will bring up the python IDE(see the >>> on the side).
+This will bring up the python IDE(see the >>>> on the side).
 
 Now type:
 
@@ -72,7 +74,7 @@ Finally, to run functions on the pump(assuming it's in position 8) type:
 Hub.device_list[8].run_finite_with_accel(3, 0, 2, 200, ’ml’)
 ```
 
->Now the pump should run!
+>Now the pump should run and dispense 3ml!
 
 <!--Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
