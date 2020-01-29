@@ -2,7 +2,79 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Connecting to The Raspberry PI(mac)
+
+On your pc press `command` + `space` and type _terminal_.
+
+In the terminal enter the following:
+
+```bash
+ssh pi@10.103.214.182
+```
+
+Then type _raspberry_ as the password and hit `enter`.
+
+> You should now be connect to the PI via ssh.
+
+# Running the pumps
+
+First move into the directory where the python script is located.
+
+Something like this should do the trick:
+
+```bash
+cd aqueduct/aqueduct
+```
+
+hit `enter` after
+
+Verify you are in the correct folder using
+
+```bash
+ls
+```
+
+hit `enter` after:
+
+And you should see Hub.py
+
+Now to run the file type:
+
+```bash
+python3
+```
+
+hit `enter` after
+
+This will bring up the python IDE(see the >>> on the side).
+
+Now type:
+
+```python
+exec(open("Hub.py").read())
+```
+
+hit `enter` after
+
+At this point, you should see the pump connected.
+
+To verify the pump is connected type:
+
+```python
+Hub.device_list
+```
+
+hit `enter` to see where the pump is in the device_list array.
+
+Finally, to run functions on the pump(assuming it's in position 8) type:
+
+```python
+Hub.device_list[8].run_finite_with_accel(3, 0, 2, 200, ’ml’)
+```
+
+>Now the pump should run!
+
+<!--Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
 
@@ -120,4 +192,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ```
 The final element.
-```
+```-->
