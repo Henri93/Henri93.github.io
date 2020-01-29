@@ -2,7 +2,10 @@
 layout: default
 ---
 
-# Connecting to The Raspberry PI(mac)
+# Cosmetric Help
+
+
+## Connecting to The Raspberry PI(mac)
 
 On your pc press `command` + `space` and type _'terminal'_.
 
@@ -17,8 +20,7 @@ Then type _'raspberry'_ as the password and hit `enter`.
 > You should now be connect to the PI via ssh.
 
 
-
-# Running the pumps
+## Running the pumps
 
 First move into the directory where the python script is located.
 
