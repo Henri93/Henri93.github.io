@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.hgarant.splitwit.android",
+    "sha256_cert_fingerprints":
+    ["B2:96:3D:42:41:99:A5:72:17:32:36:3E:E1:E6:3D:CB:BA:7F:AF:59:A0:17:70:28:A5:DB:3E:AF:A3:DF:1B:F7"]
+  }
+}]
